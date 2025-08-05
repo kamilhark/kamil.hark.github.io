@@ -18,21 +18,33 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: BoxRent - Roof Box Rental Service
+email: info@boxrent.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  BoxRent offers high-quality roof boxes and roof racks for rent. 
+  Whether you need extra storage for a weekend trip or a long vacation, 
+  we have the perfect solution for your vehicle.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+phone: "+1 (555) 123-4567"
+address: "123 Main Street, Anytown, USA"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Custom settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Add custom CSS
+header_pages:
+  - about.markdown
+  - products.markdown
+  - contact.markdown
+  - terms.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
